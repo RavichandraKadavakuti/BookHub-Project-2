@@ -1,0 +1,8 @@
+.contact-us-icon {
+  font-size: 22px;
+}
+@media screen and (min-width: 992px) {
+  .contact-us-icon {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,33 @@
+.nav-item {
+  font-weight: bold !important;
+}
+.logout-btn {
+  font-weight: bold !important;
+}
+.logout-btn:hover {
+  background-color: black !important;
+  color: white !important;
+  border: none;
+}
+.active {
+  color: #0d6efd !important;
+}
+@media screen and (min-width: 992px) {
+  .active {
+    border-bottom: 2px solid black;
+  }
+}
+.popup-content {
+  width: 100% !important;
+  height: 50vh;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .popup-content {
+    width: 50% !important;
+  }
+}

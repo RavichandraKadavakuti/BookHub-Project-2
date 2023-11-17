@@ -1,0 +1,22 @@
+@media screen and (min-width: 992px) {
+  .lg-border {
+    border-right: 1px solid;
+  }
+}
+@media screen and (min-width: 992px) {
+  .side-bar {
+    height: 100vh;
+  }
+}
+.star {
+  color: gold;
+}
+@media screen and (min-width: 992px) {
+  .books-container {
+    height: 100vh;
+    overflow: auto;
+  }
+}
+.search-icon {
+  font-size: 22px;
+}

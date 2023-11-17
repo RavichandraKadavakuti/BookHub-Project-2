@@ -1,0 +1,7 @@
+.slick-img {
+  width: 100px;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+}
