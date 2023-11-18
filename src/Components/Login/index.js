@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./index.css";
 import { InitialFetchAPiState, LoginApi } from "../Utilities";
 import Cookies from "js-cookie";
+import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
 
 const Login = (props) => {
   const [fetchState, setFetchState] = useState(InitialFetchAPiState.INITIAL);
@@ -38,6 +39,12 @@ const Login = (props) => {
   const toggleCheck = (event) => {
     setCheck(event.target.checked);
   };
+
+  const token = Cookies.get("jwt_token");
+
+  if (token !== undefined) {
+    return <Redirect to="/" />;
+  }
 
   return (
     <div className="container">

@@ -32,7 +32,7 @@ export const BookshelvesValue = [
   },
 ];
 
-const token = Cookies.get("jwt_token");
+let token = Cookies.get("jwt_token");
 
 export const LoginApi = async (path, data) => {
   try {
