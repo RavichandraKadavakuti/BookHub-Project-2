@@ -53,6 +53,8 @@ export const LoginApi = async (path, data) => {
 };
 
 export const GetMethodApiData = async (path) => {
+  let token = Cookies.get("jwt_token");
+
   try {
     const url = `https://apis.ccbp.in/${path}`;
     const options = {
